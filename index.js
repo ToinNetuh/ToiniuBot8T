@@ -1273,7 +1273,7 @@ async function starts() {
 				  case 'ownergroup':
                client.updatePresence(from, Presence.composing) 
               options = {
-          text: `Owner Group ini adalah : @${from.split("-")[0]}`,
+          text: `Dono do grupo e o : @${from.split("-")[0]}`,
           contextInfo: { mentionedJid: [from] }
            }
            client.sendMessage(from, options, text, { quoted: mek } )

@@ -1,7 +1,7 @@
-const help = (prefix, pushname, botname, oname) => {
+const help = (prefix, sender, pushname, botname, oname) => {
 	return `
   「 *Toin Bot* 」
-  Oiin
+  Oiin @${sender}
   
   ◪ *INFORMAÇÕES*
     ❏ Prefix: 「  ${prefix}  」
