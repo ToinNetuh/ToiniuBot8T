@@ -611,6 +611,11 @@ async function starts() {
                 quoted: mek
 				}
 				break
+				case "randomtag":
+    const getRandomUser = await client.getGroupParticipantIDs()
+    const randomizeIt = getRandomUser[Math.floor(Math.random() * getRandomUser.length)]
+    await client.sendTextWithMentions(from, `@${randomizeIt.replace('@c.us', '')}`)
+break
 			    case 'nsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
